@@ -67,7 +67,7 @@ public class Buoi5 {
 
         System.out.println(countValid == 0
                 ? "Mang nay khong co gia tri nao chia het cho 4 && ko chia het cho 5"
-                : ("Mang nay co " + countValid + "chia het cho 4 && ko chia het cho 5")
+                : ("Mang nay co [" + countValid + "] gia tri chia het cho 4 && ko chia het cho 5")
         );
     }
 
@@ -82,7 +82,6 @@ public class Buoi5 {
         for (int i = 0; i < n; i++) {
             if (isNguyenTo(arr[i])) {
                 total = total + arr[i];
-                break;
             }
         }
 
