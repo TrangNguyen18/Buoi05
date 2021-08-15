@@ -1,22 +1,32 @@
 public class Array {
     public static void main(String[] args) {
-   int [] arr = {1, 2, 3, 4, 5};
-        for (int i = 0; i < arr.length; i++) {
-            System.out.format("%d ," , arr[i]);
+        int[] arr1 = {1, 2, 5, 9, 6};
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.format("%d ", arr1[i]);
         }
+        ;
         System.out.println();
-        System.out.println();
-        System.out.println(arr[3]);
-        System.out.println();
-        int j = 0;
-        while (j < arr.length){
-            System.out.print(arr [j] + ", ");
-            j++;
+        int[] arr2 = new int[5];
+        arr2[0] = 1;
+        arr2[1] = 9;
+        arr2[2] = 6;
+        arr2[3] = 189;
+        arr2[4] = 0;
+        for (int i = 0; i < arr2.length; i++) {
+            System.out.print(arr2[i]);
+            System.out.print(" ");
         }
+        ;
         System.out.println();
+        for (int n : arr2) {
+            System.out.print(n);
+            System.out.print(" ");
+        }
+        ;
+        System.out.println();
+        for (int i = arr2.length - 1; i >= 0; i--) {
+            System.out.format("%d ", arr2[i]);
+        };
 
-        for (int a : arr){
-            System.out.print(a + ", ");
-        }
     }
 }
